@@ -23,7 +23,7 @@ from PyQt5.QtWidgets import *
 import json
 from fuzzywuzzy import fuzz
 
-class EmojiListApp(QMainWindow):
+class FuzzyMojiApp(QMainWindow):
     def __init__(self):
         super().__init__()
 
@@ -103,6 +103,6 @@ class EmojiListApp(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = EmojiListApp()
+    window = FuzzyMojiApp()
     window.show()
     sys.exit(app.exec_())
